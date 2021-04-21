@@ -70,6 +70,7 @@ export function UserIdentification(){
 
                             <View style = {styles.footer}>
                                 <Button
+                                enabled = {!!name}
                                 title = "Confirmar"
                                 onPress = {handleSubmit}
                                 />

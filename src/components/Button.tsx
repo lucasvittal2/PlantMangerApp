@@ -13,10 +13,11 @@ interface ButtonsProps extends TouchableOpacityProps{
     title: string;
     enabled: boolean;
 }
+let enabled; 
 // type btnProps = View['ButtonsProps']
 export function Button({title, enabled, ...rest}:ButtonsProps){
     return(
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity style={{...styles.container}}>
             <Text style={styles.text}
             {...rest}
             >    
